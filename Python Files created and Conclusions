@@ -1,0 +1,12 @@
+Functions of each Python Program:-
+
+1. read.py -- Reads the hn_stories.csv file into a Pandas Dataframe. Adds the column names (submission_time, upvotes, url, and headline) to the Dataframe.
+2. count.py -- Imports load_data dataframe from read.py, and call the function to read in the dataset. The function combines all the headlines and then splits them into words. It then lowercases each word and then removws the punctuation to count each word's occurrance.
+3. domains.py -- Imports load_data dataframe from read.py, and call the function to read in the dataset. The function uses the value_counts method in pandas to count the number of occurrences of each value in the "url" column. Then we can print out the result in whichever way we want.
+4. times.py -- Imports load_data dataframe from read.py, and call the function to read the submission_time column in the dataset. This function should first use dateutil.parser.parse to parse the timestamp data in the column, then extract the hour from the resulting datetime object, then return the hour. We can then use the pandas apply method to make a column of submission hours.We can use the value_counts method to find the number of occurences of each hour and print out the results.
+
+Conclusions:-
+
+1. Which Words Appear In The Headlines Often? -- (2045, 'the')
+2. Which Domains Were Submitted Most Often? -- (174, 'github.com')
+3. When Are The Most Articles Submitted? -- (646, 17)
